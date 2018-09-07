@@ -68,9 +68,9 @@ const sql = require("sqlite");
     }
     });
 	
-	const adminprefix = "#v";
+	const adminprefix = "#vip";
 client.on('message', message => {
-	var devs = ['314845344313901057'];
+	var devs = ['400709582285963277'];
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
     
@@ -97,15 +97,15 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 
 client.on("message", message => {
   if (message.content === "#viphelp") {
-	  if (message.author.id !== '314845344313901057') return message.reply('**هاذا المر فقط لصاحب السيرفر فقط**')
- if(!message.author.id === '314845344313901057') return;
+	  if (message.author.id !== '400709582285963277') return message.reply('**هاذا المر فقط لصاحب السيرفر فقط**')
+ if(!message.author.id === '400709582285963277') return;
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
-#vsetgame ==> لتغيرر البلايينج حك البوت
-#vsetname ==> لتغيير اسم البوت 
-#vsetavatar ==> لتغيير صورة البوت
-#vsetT ==> لتغيير التويتش حك البوت
+#vipsetgame ==> لتغيرر البلايينج حك البوت
+#vipsetname ==> لتغيير اسم البوت 
+#vipsetavatar ==> لتغيير صورة البوت
+#vipsetT ==> لتغيير التويتش حك البوت
 `)
    message.author.sendEmbed(embed)
     
